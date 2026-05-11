@@ -1,4 +1,4 @@
-# VIGIL Stones — Installation & Integration Guide
+# THE SINGULARITY — Installation & Integration Guide
 
 > This guide is intended for developers who wish to integrate the VIGIL Stones and THE ARC systems into their own AI assistant projects.
 >
