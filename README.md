@@ -2,7 +2,7 @@
 
 # ◈ THE SINGULARITY
 
-### *The Awareness Layer for Next-Generation AI*
+### *The Awareness Ecosystem for AI Assistants*
 
 **What if your AI assistant understood the path you were on — before you spoke?**
 
@@ -30,17 +30,19 @@ They are reactive tools, not proactive partners.
 
 ## What Is The Singularity?
 
-The Singularity is a **zero-dependency awareness ecosystem** — a convergence of narrative tracking (Soul) and real-time behavioral reading (Body). It lives between conversations, always observing, always synthesizing.
+The Singularity is a **zero-dependency awareness ecosystem** — a convergence of narrative tracking (Soul), intelligence routing (Mind), and real-time behavioral reading (Body). It lives between conversations, always observing, always synthesizing.
 
-It is not another memory store. It is the layer that gives your AI **intuition**.
+It is not another memory store. It is the layer that gives your AI **genuine depth and intuition**.
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                      THE SINGULARITY                        │
 │                                                             │
-│   🏛️ THE ARC     Long-term Narrative & Decisions             │
-│   💎 STONES      Real-time State, Goal, & Heat              │
-│   🔮 EVOLUTION   Proactive Routing & Prediction             │
+│   🧠 ORACLE      Which model to use (Cost & Logic)          │
+│   🔮 SPECTRE     What the user will ask next (Proactive)    │
+│   📦 ARCHIVE     How the user feels over time (Hafıza)      │
+│   🏛️ THE ARC     Where the conversation has been            │
+│   💎 STONES      User state, goals, and heat                │
 │                                                             │
 │              [ Your AI Assistant ]                          │
 │         ↑ colored by everything above ↑                     │
@@ -49,45 +51,29 @@ It is not another memory store. It is the layer that gives your AI **intuition**
 
 ---
 
-## Core Modules (v1.0)
+## The Core Ecosystem (v1.0 Stable)
 
 ### 🏛️ THE ARC — Narrative Architecture
 > *"Conversations have arcs. THE ARC tracks the story."*
+The backbone of long-term continuity. It detects definitive decisions, tracks unresolved "ghost threads," and manages the semantic decay of information.
 
-The backbone of long-term continuity. It detects definitive decisions, tracks unresolved "ghost threads," and manages the semantic decay of information to keep the AI focused on what truly matters.
+### 🧠 ORACLE — Intelligent Model Router
+> *"The right brain for the right task — automatically."*
+Dynamically selects the most efficient LLM for each turn based on query complexity, topic depth, and urgency. Optimizes for cost without sacrificing quality.
 
----
+### 🔮 SPECTRE — Proactive Context Synthesizer
+> *"Anticipating the path before it's taken."*
+Synthesizes persona data with narrative trajectory to predict the user's next logical step. Prepares the context before the question is even asked.
+
+### 📦 ARCHIVE — Longitudinal User Memory
+> *"Remembering the person, not just the data."*
+A hierarchical, emotional memory system that builds a profile of the user across months, tracking emotional signatures and long-term behavioral trends.
 
 ### 💎 INTELLIGENCE STONES — Real-Time Awareness
-
-- **🌊 TideStone:** Reads the user's current energy, focus, and behavioral pace.
-- **🧭 CompassStone:** Tracks multi-turn intent and identifies hidden blockers.
+- **🌊 TideStone:** Reads real-time energy, focus, and behavioral pace.
+- **🧭 CompassStone:** Tracks multi-turn intent and identifies progress blockers.
 - **🔥 EmberStone:** Measures the "heat" of recurring topics through semantic recurrence.
-- **🪞 MirrorStone:** Monitors assistant confidence and identifies hedging language.
-
----
-
-## The Evolution (Roadmap)
-
-We are moving from reactive awareness to **Proactive Intelligence**.
-
-### 💠 ORACLE — Intelligent Model Router
-*Dynamic Brain Optimization.*
-Oracle analyzes query complexity, topic depth, and historical patterns to route requests to the most efficient LLM.
-- **Logic:** Trivial turns → Lightweight models | Complex logic → Heavy-duty reasoning models.
-- **Impact:** 40% cost reduction, 30% faster response times.
-
-### 💠 SPECTRE — Proactive Context Synthesizer `[Conceptual]`
-*Anticipating the Next Step.*
-Spectre doesn't wait for the user to ask the next question. It prepares the context by predicting the conversation arc.
-- **Logic:** Synthesizes persona data (`BondStone`) with narrative trails to offer proactive insights.
-- **Impact:** Truly intuitive AI that feels "one step ahead."
-
-### 💠 ARCHIVE — Longitudinal User Memory `[Conceptual]`
-*The Eternal Profile.*
-Moving from session-based memory to a hierarchical, emotional user archive.
-- **Logic:** Stores not just data, but emotional signatures and behavior trends over months.
-- **Impact:** An AI that truly remembers *who* you are, not just what you said.
+- **🪞 MirrorStone:** Monitors assistant confidence and domain-specific trust.
 
 ---
 
@@ -97,9 +83,9 @@ Moving from session-based memory to a hierarchical, emotional user archive.
 |:---|:---:|:---:|:---:|:---:|
 | 🏛️ THE ARC | ✅ | ✅ | ✅ | ✅ |
 | 💎 STONES | ✅ | ✅ | ✅ | ✅ |
-| 💠 ORACLE | ✅ | ✅ | ✅ | ✅ |
-| 🔮 SPECTRE | ✅ | ⏳ | ⏳ | ⏳ |
-| 📦 ARCHIVE | ✅ | ⏳ | ⏳ | ⏳ |
+| 🧠 ORACLE | ✅ | ✅ | ✅ | ✅ |
+| 🔮 SPECTRE | ✅ | ✅ | ✅ | ✅ |
+| 📦 ARCHIVE | ✅ | ✅ | ✅ | ✅ |
 
 `✅ Released` · `🔄 In Progress` · `⏳ Planned`
 
@@ -110,21 +96,19 @@ Moving from session-based memory to a hierarchical, emotional user archive.
 The Singularity is designed to be **dropped into any AI assistant pipeline**:
 
 ```python
-from the_singularity import TheArc, TideStone, CompassStone
+from the_singularity import TheArc, Oracle, Spectre
 
 # Initialize
 arc = TheArc()
-tide = TideStone()
+oracle = Oracle()
+spectre = Spectre()
 
 # On every turn
 arc.absorb(turn_record)
-tide.observe_user(user_msg)
+decision = oracle.route(user_msg)
+prediction = spectre.predict_next(arc.get_history())
 
-# Before generating response
-context = arc.consult(user_msg)
-directive = tide.get_state_directive()
-
-# Your AI now has awareness.
+# Your AI now has soul, mind, and foresight.
 ```
 
 ---
