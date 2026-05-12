@@ -30,7 +30,10 @@ VIGIL and THE ARC form the **awareness layers** of an AI assistant:
 │  → Where is the user going? What decisions were made?       │
 │    What topics keep recurring?                              │
 ├─────────────────────────────────────────────────────────────┤
-│  Layer 2 — User State (TideStone)                           │
+│  Layer 2 — Intelligence Routing (ORACLE)                     │
+│  → Which LLM is best for this turn? (Complexity vs Cost)    │
+├─────────────────────────────────────────────────────────────┤
+│  Layer 3 — User State (TideStone)                           │
 │  → How is the user feeling right now? Is energy high?       │
 │    Are they focused?                                        │
 ├─────────────────────────────────────────────────────────────┤
@@ -52,6 +55,7 @@ VIGIL and THE ARC form the **awareness layers** of an AI assistant:
 | Module | Technical Name | Purpose |
 |-------|----------------|-------|
 | **THE ARC** | Long-Term Narrative Tracker | Tracks long-term conversation history: decisions, ghost threads, growth trails. |
+| **ORACLE** | Intelligent Model Router | Automatically selects the best-fit LLM based on query complexity and depth. |
 | **TideStone** | Real-Time User State Reader | Reads the user's current energy, focus, and pace. |
 | **CompassStone** | Multi-Turn Goal Tracker | Tracks user goals across multiple turns. |
 | **EmberStone** | Recurring Topic Heat Tracker | Tracks the "heat" of recurring topics. |
@@ -276,7 +280,22 @@ stats = arc.get_stats()
 print(f"Total episodes: {stats['total_episodes']}")
 ```
 
-### 5.2 TideStone — Real-Time User State
+### 5.2 ORACLE — Intelligent Model Routing
+
+Dynamically selects the best-fit LLM for each turn.
+
+```python
+# Before each LLM call
+decision = oracle.route("Rust lifetimes and borrowing explained")
+
+print(decision.primary_model)   # e.g., ModelChoice.GROQ_LLAMA
+print(decision.complexity)       # ComplexityLevel.DEEP
+
+# After the response, record satisfaction for learning
+oracle.record_outcome(decision, user_satisfaction=0.9)
+```
+
+### 5.3 TideStone — Real-Time User State
 
 Reads **how** the user feels (energy, pace, focus).
 

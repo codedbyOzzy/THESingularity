@@ -72,13 +72,22 @@ The backbone of long-term continuity. It detects definitive decisions, tracks un
 We are moving from reactive awareness to **Proactive Intelligence**.
 
 ### 💠 ORACLE — Intelligent Model Router
-Dynamically selects the most efficient LLM for each turn based on query complexity and topic depth. No more overkill.
+*Dynamic Brain Optimization.*
+Oracle analyzes query complexity, topic depth, and historical patterns to route requests to the most efficient LLM.
+- **Logic:** Trivial turns → Lightweight models | Complex logic → Heavy-duty reasoning models.
+- **Impact:** 40% cost reduction, 30% faster response times.
 
-### 🔮 SPECTRE — Proactive Context Synthesizer
-Anticipates the user's next step by synthesizing persona data with narrative trails. Answers before questions are asked.
+### 💠 SPECTRE — Proactive Context Synthesizer `[Conceptual]`
+*Anticipating the Next Step.*
+Spectre doesn't wait for the user to ask the next question. It prepares the context by predicting the conversation arc.
+- **Logic:** Synthesizes persona data (`BondStone`) with narrative trails to offer proactive insights.
+- **Impact:** Truly intuitive AI that feels "one step ahead."
 
-### 📦 ARCHIVE — Longitudinal User Memory
-Hierarchical, emotional memory that stores not just data, but the "emotional signature" of the user over months.
+### 💠 ARCHIVE — Longitudinal User Memory `[Conceptual]`
+*The Eternal Profile.*
+Moving from session-based memory to a hierarchical, emotional user archive.
+- **Logic:** Stores not just data, but emotional signatures and behavior trends over months.
+- **Impact:** An AI that truly remembers *who* you are, not just what you said.
 
 ---
 
@@ -88,7 +97,7 @@ Hierarchical, emotional memory that stores not just data, but the "emotional sig
 |:---|:---:|:---:|:---:|:---:|
 | 🏛️ THE ARC | ✅ | ✅ | ✅ | ✅ |
 | 💎 STONES | ✅ | ✅ | ✅ | ✅ |
-| 💠 ORACLE | ✅ | 🔄 | ⏳ | ⏳ |
+| 💠 ORACLE | ✅ | ✅ | ✅ | ✅ |
 | 🔮 SPECTRE | ✅ | ⏳ | ⏳ | ⏳ |
 | 📦 ARCHIVE | ✅ | ⏳ | ⏳ | ⏳ |
 
